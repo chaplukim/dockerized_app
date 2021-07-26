@@ -7,6 +7,7 @@ from flask import request
 
 # the name of the app(flask()):
 app = Flask(__name__)
+
 print(os.path.abspath(os.curdir))
 MODEL = pickle.load(open('churn_model.pkl', 'rb'))
 
